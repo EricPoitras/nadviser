@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <!-- Google Analytics Integration -->
+      <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-89808309-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+     <!--End Google Analytics -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="css/stylesheet.css">
+      
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      
+      <script src="agent/artyomwindowmin.js"></script>
+
+      <title>Novessa</title>
+  </head>
+  <body>
+      
+    <!-- Just an image -->
+    <nav class="navbar">
+      <a class="navbar-brand" target="_blank" href="https://s3.amazonaws.com/novessa/index.html">
+        <img src="assets/logo.svg" width="30" height="30" alt="">
+        Novessa
+      </a>
+      <form class="form-row flex-fill">
+        <div class="form-group col-9">
+            <div class="input-group">
+            <label for="inputresponse" class="sr-only">Response</label>
+            <input type="text" class="form-control logmouseonclick logmouseondblclick logmouseoncontext logmouseonenter logmouseonleave logtouchstart logtouchend logtouchenter logtouchleave logonchange" placeholder="Hey, ask me something..." id="q">
+             <div class="input-group-append">
+                <button id="audiobutton" class="btn btn-outline-light logmouseonclick logmouseondblclick logmouseoncontext logmouseonenter logmouseonleave logtouchstart logtouchend logtouchenter logtouchleave logonchange" type="button"><i class="fas fa-microphone-alt"></i></button>
+            </div>
+            </div>
+        </div>
+        <div class="form-group col-3">
+            <a href="#" id="querysubmitbutton" class="btn btn-outline-light logmouseonclick logmouseondblclick logmouseoncontext logmouseonenter logmouseonleave logtouchstart logtouchend logtouchenter logtouchleave logonchange">Say</a>
+        </div>
+        <div id="helpbutton" class="help logmouseonclick logmouseondblclick logmouseoncontext logmouseonenter logmouseonleave logtouchstart logtouchend logtouchenter logtouchleave logonchange"><button type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-content="To get started, ask the following 'Let's begin a new lesson'. This app serves as a companion to the Novessa website."><i class="far fa-question-circle"></i></button></div>
+      </form>
+    </nav>
+      
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div id="dashboard" class="col-md-8">
+                <div class="p-1 logmouseonclick logmouseondblclick logmouseoncontext logmouseonenter logmouseonleave logtouchstart logtouchend logtouchenter logtouchleave logonchange" id="result"></div>
+                <div style="display:none;" id="jsonResponse"></div>
+            </div>
+        </div>  
+    </div> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+      
+    <script src="js/main.js"></script>
+    <script src="js/log.js"></script>
+    <script src="agent/ApiAi.js"></script>
+    <script src="agent/demoFunctions.js"></script>
+    <script defer src="agent/layout.js"></script>
+    <script src="agent/dictation.js"></script>
+      
+    <script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    });   
+    </script>
+      
+    <!-- Mouseflow integration -->
+    <script type="text/javascript">
+    window._mfq = window._mfq || [];
+    (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript"; mf.async = true;
+        mf.src = "//cdn.mouseflow.com/projects/3dbc8b03-2f3f-4a38-b723-e9d7dfb7785e.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+    })();
+</script>
+  </body>
+</html>

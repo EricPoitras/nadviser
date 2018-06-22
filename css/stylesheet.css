@@ -1,0 +1,45 @@
+nav.navbar{
+    background-color: #007bff;
+}
+
+.navbar-brand{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+
+#result div{
+    border-radius: 10px;
+    box-shadow: 1px 1px gray;
+}
+
+.help{
+    color: white;
+    padding: 4px;
+    font-size: 20pt;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.help button{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+.help button:focus, .help button:active{
+    box-shadow: 0 0 0 0 transparent;
+}
